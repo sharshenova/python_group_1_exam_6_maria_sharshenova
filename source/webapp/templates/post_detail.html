@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Публикация{% endblock %}
+
+{% block content %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text }}</p>
+    <p>Автор: {{ post.author }}</p>
+    <hr>
+{#    {% if perms.webapp.change_food %}#}
+{#        <a href="{% url "webapp:post_update" food.pk %}">Изменить публикацию</a>#}
+{#    {% endif %}#}
+{#    {% if perms.webapp.delete_food %}#}
+{#        <a href="{% url "webapp:post_delete" food.pk %}">Удалить публикация</a>#}
+{#    {% endif %}#}
+{#    <hr>#}
+
+{% endblock %}
