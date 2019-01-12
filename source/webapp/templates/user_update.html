@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Изменить пользователя{% endblock %}
+
+{% block content %}
+    <h1>Изменить пользователя</h1>
+    <form action="{% url 'webapp:user_update' userinfo.pk %}" method="post" class="form-group" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+{% endblock %}

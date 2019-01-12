@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from webapp.models import Post, UserInfo, User
+from webapp.models import Post, UserInfo
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
-from webapp.forms import PostForm
+from webapp.forms import PostForm, UserForm
 from django.urls import reverse, reverse_lazy
 from django.shortcuts import redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -88,6 +88,13 @@ class UserDetailView(DetailView):
         return context
 
 
+class UserUpdateView(UpdateView):
+    model = UserInfo
+    template_name = 'user_update.html'
+    form_class = UserForm
 
+
+    def get_success_url(self):
+        return reverse('webapp:user_detail', kwargs={'pk': self.object.pk})
 
 
