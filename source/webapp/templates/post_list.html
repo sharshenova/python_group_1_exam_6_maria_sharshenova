@@ -4,7 +4,7 @@
 
 {% block content %}
     <h1>Новости</h1>
-    <a href="{% url 'webapp:post_create' %}" class="nav-link">Создать публикацию</a>
+    <h4><a href="{% url 'webapp:post_create' %}" class="nav-link">Создать публикацию</a></h4>
     {% for post in post_list %}
         <h2><a href="{% url 'webapp:post_detail' post.pk %}">{{ post.title }}</a> by {{ post.author }}, date: {{ post.date }} </h2>
         <hr>

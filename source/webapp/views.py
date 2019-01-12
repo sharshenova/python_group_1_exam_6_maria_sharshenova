@@ -88,11 +88,17 @@ class UserDetailView(DetailView):
         return context
 
 
+
 class UserUpdateView(UpdateView):
     model = UserInfo
     template_name = 'user_update.html'
     form_class = UserForm
 
+    def get(self, request, pk):
+        userinfo = get_object_or_404(UserInfo, pk=pk)
+        if userinfo.user != self.request.user:
+            return HttpResponseRedirect(reverse('webapp:user_detail', kwargs={'pk': pk}))
+        return super().get(request, pk=pk)
 
     def get_success_url(self):
         return reverse('webapp:user_detail', kwargs={'pk': self.object.pk})
