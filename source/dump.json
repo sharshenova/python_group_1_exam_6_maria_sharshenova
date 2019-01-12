@@ -1,0 +1,551 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "add_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "change_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "delete_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view user info",
+    "content_type": [
+      "webapp",
+      "userinfo"
+    ],
+    "codename": "view_userinfo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view post",
+    "content_type": [
+      "webapp",
+      "post"
+    ],
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$xbHHwKE3534C$PicDvg7Wd1Alv9Ni4+fL+MW/BwU3cdUBj1rMDXiOZtE=",
+    "last_login": "2019-01-12T13:16:38.456Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-01-12T05:07:26Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$jPAgnjs0zl8k$wE03dGG5SAuzinAXr9QJ4SwJ6op/Ml3gT7f27AFBpNI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "lord_voldemort",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T06:58:27Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$Pfo8mwycXWBy$j/MQBGh94PRlEMbYqhfD4rrLlGyUg/e8srYlhW0kbc8=",
+    "last_login": "2019-01-12T13:23:59.009Z",
+    "is_superuser": false,
+    "username": "bad_boy",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-01-12T07:02:24Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 2,
+  "fields": {
+    "title": "\u0417\u0434\u043e\u0440\u043e\u0432\u044b\u0439 \u043e\u0431\u0440\u0430\u0437 \u0436\u0438\u0437\u043d\u0438",
+    "text": "\u041d\u0443\u0434\u043d\u044b\u0439 \u0442\u0435\u043a\u0441\u0442 \u043f\u0440\u043e \u0417\u041e\u0416",
+    "date": "2019-01-12T06:46:43Z",
+    "author": [
+      "admin"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 3,
+  "fields": {
+    "title": "\u042f\u0434\u0435\u0440\u043d\u044b\u0439 \u043f\u0435\u043f\u0435\u043b",
+    "text": "\u0423\u0436\u0435 \u0441\u043a\u043e\u0440\u043e \u0432\u0430\u043c \u0432\u0441\u0435\u043c \u043a\u043e\u043d\u0435\u0446!",
+    "date": "2019-01-12T07:05:04Z",
+    "author": [
+      "bad_boy"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 4,
+  "fields": {
+    "title": "\u041c\u0430\u0433\u0438 \u043f\u0440\u0430\u0432\u044f\u0442 \u043c\u0438\u0440\u043e\u043c",
+    "text": "\u041c\u0430\u0433\u0438 - \u043a\u0440\u0430\u0441\u0430\u0432\u0447\u0438\u043a\u0438, \u043c\u0430\u0433\u043b\u044b - \u043b\u043e\u0445\u0438.",
+    "date": "2019-01-12T07:05:43Z",
+    "author": [
+      "lord_voldemort"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 5,
+  "fields": {
+    "title": "\u041a\u0430\u043a \u0441\u0442\u0430\u0442\u044c \u0430\u0434\u043c\u0438\u043d\u043e\u043c",
+    "text": "\u041d\u0438\u043a\u0430\u043a, \u044f \u0442\u0443\u0442 \u043e\u0434\u0438\u043d \u0442\u0435\u043c\u043d\u044b\u0439 \u0432\u043b\u0430\u0441\u0442\u0435\u043b\u0438\u043d, \u0445\u0430-\u0445\u0430-\u0445\u0430-\u0445\u0430!!!",
+    "date": "2019-01-12T09:11:33.199Z",
+    "author": [
+      "admin"
+    ]
+  }
+},
+{
+  "model": "webapp.post",
+  "pk": 6,
+  "fields": {
+    "title": "\u041f\u043e\u0432\u044b\u0448\u0435\u043d\u0438\u0435 \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0432\u043e\u0437\u0440\u0430\u0441\u0442\u0430",
+    "text": "\u0421 \u0437\u0430\u0432\u0442\u0440\u0430\u0448\u043d\u0435\u0433\u043e \u0434\u043d\u044f \u043f\u0435\u043d\u0441\u0438\u043e\u043d\u043d\u044b\u0439 \u0432\u043e\u0437\u0440\u0430\u0441\u0442 \u043f\u043e\u0432\u044b\u0448\u0430\u0435\u0442\u0441\u044f \u0434\u043e 100 \u043b\u0435\u0442!",
+    "date": "2019-01-12T09:20:13.243Z",
+    "author": [
+      "bad_boy"
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "lord_voldemort"
+    ],
+    "phone": "0770503099",
+    "photo": "userpic4_BxTKYyY.jpg",
+    "friends": [
+      [
+        "admin"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "bad_boy"
+    ],
+    "phone": "0770503044",
+    "photo": "userpic6_73hWM9t.jpg",
+    "friends": [
+      [
+        "admin"
+      ],
+      [
+        "lord_voldemort"
+      ]
+    ]
+  }
+},
+{
+  "model": "webapp.userinfo",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "phone": "0770503045",
+    "photo": "userpic3_oRKPoAM_nQkxjYz.jpg",
+    "friends": [
+      [
+        "bad_boy"
+      ]
+    ]
+  }
+}
+]
