@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from webapp.models import Post
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
-#DeleteView, FormView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
 from webapp.forms import PostForm
 from django.urls import reverse, reverse_lazy
 from django.shortcuts import redirect, get_object_or_404
@@ -19,8 +18,8 @@ class PostListView(LoginRequiredMixin, ListView):
     model = Post
     template_name = 'post_list.html'
 
-    # def get_queryset(self):
-        #order_by
+    def get_queryset(self):
+        return self.model.objects.order_by('-date')
 
 
 class PostDetailView(LoginRequiredMixin, DetailView):
@@ -56,6 +55,21 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_success_url(self):
         return reverse('webapp:post_detail', kwargs={'pk': self.object.pk})
+
+
+class PostDeleteView(LoginRequiredMixin, DeleteView):
+    model = Post
+    template_name = 'post_delete.html'
+
+    def dispatch(self, request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        if post.author != self.request.user:
+            return HttpResponseRedirect(reverse('webapp:post_detail', kwargs={'pk': pk}))
+        return super().dispatch(request, pk=pk)
+
+    def get_success_url(self):
+        return reverse('webapp:post_list')
+
 
 
 

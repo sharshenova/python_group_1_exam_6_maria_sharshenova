@@ -6,12 +6,10 @@
     <p>{{ post.text }}</p>
     <p>Автор: {{ post.author }}</p>
     <hr>
-{#    {% if perms.webapp.change_food %}#}
-{#        <a href="{% url "webapp:post_update" food.pk %}">Изменить публикацию</a>#}
-{#    {% endif %}#}
-{#    {% if perms.webapp.delete_food %}#}
-{#        <a href="{% url "webapp:post_delete" food.pk %}">Удалить публикация</a>#}
-{#    {% endif %}#}
-{#    <hr>#}
+    {% if post.author == request.user %}
+        <a href="{% url "webapp:post_update" post.pk %}">Изменить публикацию</a>
+        <a href="{% url "webapp:post_delete" post.pk %}">Удалить публикацию</a>
+    {% endif %}
+    <hr>
 
 {% endblock %}
