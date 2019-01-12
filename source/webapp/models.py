@@ -10,7 +10,7 @@ class UserInfo(models.Model):
     friends = models.ManyToManyField(User, blank=True, related_name="friends", verbose_name="Друзья")
 
     def __str__(self):
-        return self.user
+        return self.phone
 
 
 class Post(models.Model):
