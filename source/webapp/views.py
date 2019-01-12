@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect
 from webapp.models import Post
-from django.views.generic import ListView, DetailView, CreateView
-#UpdateView, DeleteView, FormView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
+#DeleteView, FormView
 from webapp.forms import PostForm
 from django.urls import reverse, reverse_lazy
 from django.shortcuts import redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
+from django.http import HttpResponseRedirect
 
 
 # Create your views here.
@@ -39,6 +40,24 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
     def get_success_url(self):
         return reverse('webapp:post_detail', kwargs={'pk': self.object.pk})
+
+
+
+class PostUpdateView(LoginRequiredMixin, UpdateView):
+    model = Post
+    template_name = 'post_update.html'
+    form_class = PostForm
+
+    def dispatch(self, request, pk):
+        post = get_object_or_404(Post, pk=pk)
+        if post.author != self.request.user:
+            return HttpResponseRedirect(reverse('webapp:post_detail', kwargs={'pk': pk}))
+        return super().dispatch(request, pk=pk)
+
+    def get_success_url(self):
+        return reverse('webapp:post_detail', kwargs={'pk': self.object.pk})
+
+
 
 
 
