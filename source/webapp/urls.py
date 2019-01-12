@@ -1,8 +1,8 @@
 from django.urls import path
-from webapp.views import welcome_view, PostListView, PostDetailView, PostCreateView, PostUpdateView, PostDeleteView
+from webapp.views import welcome_view, PostListView, PostDetailView, PostCreateView, PostUpdateView, PostDeleteView, \
+    UserListView, UserDetailView
 
-from django.conf.urls.static import static
-from django.conf import settings
+
 
 
 app_name = 'webapp'
@@ -14,6 +14,8 @@ urlpatterns = [
     path('posts/create', PostCreateView.as_view(), name='post_create'),
     path('posts/<int:pk>/update', PostUpdateView.as_view(), name='post_update'),
     path('posts/<int:pk>/delete', PostDeleteView.as_view(), name='post_delete'),
+    path('users', UserListView.as_view(), name='user_list'),
+    path('users/<int:pk>', UserDetailView.as_view(), name='user_detail'),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

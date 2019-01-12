@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from webapp.models import Post
+from webapp.models import Post, UserInfo, User
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
 from webapp.forms import PostForm
 from django.urls import reverse, reverse_lazy
@@ -70,6 +70,22 @@ class PostDeleteView(LoginRequiredMixin, DeleteView):
     def get_success_url(self):
         return reverse('webapp:post_list')
 
+
+
+class UserListView(ListView):
+    model = UserInfo
+    template_name = 'user_list.html'
+
+
+
+class UserDetailView(DetailView):
+    model = UserInfo
+    template_name = "user_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['posts'] = self.object.user.posts_by_user.all().order_by('-date')
+        return context
 
 
 
